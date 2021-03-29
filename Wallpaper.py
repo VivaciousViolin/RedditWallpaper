@@ -2,6 +2,13 @@
 import praw #reddit api plugin
 import wget #download things from web
 
+#reddit api key
+reddit = praw.Reddit(
+    client_id="HXCeAdSuEYPXFQ",
+    client_secret="	FcNIVNV5zRLGg5fnOsWMtYLN7ntjww",
+    redirect_uri="http://localhost:8080",
+    user_agent="public wallpaper scraper",
+)
 
 # get top post from r/wallpaper from today
 top_wallpaper = reddit.subreddit('wallpaper').top(limit=1, time_filter="day")
