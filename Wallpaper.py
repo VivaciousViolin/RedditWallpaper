@@ -2,6 +2,7 @@
 import praw #reddit api plugin
 import wget #download things from web
 
+
 #reddit api key
 reddit = praw.Reddit(
     client_id="HXCeAdSuEYPXFQ",
@@ -22,3 +23,4 @@ for submission in top_wallpaper:
 
 #download the image
 wget.download(image_url, 'C:/Users/Alex/Pictures/dailybackground')
+
